@@ -106,7 +106,10 @@ body {
 #fix-right-bottom image {
     right: 0;
 }
-#fix-right-bottom-qrcode {   
+#fix-right-bottom-qrcode {
+    position: fixed;
+    right: 2%;
+    bottom: 5%;   
     margin: 0;
     padding: 0;
     width: 100px;
