@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <title>FaceCapture</title>
+        <link href="css/app.css" rel="stylesheet">
+        <link href="css/font-awesome.min.css" rel="stylesheet">
+        <link crossorigin href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600;900&display=swap" rel="stylesheet">
+        <script src="js/app.js"></script>
+    </head>
+
+    <body>
+        <section id="fix">
+            <div id="fix-left">
+                <div id="fix-left-top">
+                    <h1><image id="fix-left-top-logo" src="images/icon.png">FaceCapture</h1>
+                    <p>Fit yout <b>Head</b> into the <b>template</b> and try to <b>follow</b> the <b>target</b> point with the tip your <b>nose</b>.</p>
+                    <p>A <b>3s countdown</b> will start before recording. The resulting clip will be saved as a <b>webm</b> video file after <b>20s</b>.</p>
+                </div>
+                <div id="fix-left-bottom">
+                    Under MIT License<br>Copyright &copy; 2020 Yliess HATI
+                </div>
+            </div>
+            <div id="fix-right">
+                <div id="fix-right-top">
+                    <h1>Github</h1>
+                    <p>The <b>code</b> for this tool is <b>open-source</b> and available for free on <b>Github</b> <u>https://bit.ly/35r8iYY</u></p>
+                    <p>FaceCapture is built with vanilla <b>NodeJS</b> & <b>Electron</b></p>
+                </div>
+                <div id="fix-right-bottom">
+                    <img id="fix-right-bottom-qrcode" src="images/qrcode.png" />
+                </div>
+            </div>
+        </section>
+        <section id="dynamic">
+            <video id="dynamic-video" autoplay></video>
+            <svg id="dynamic-template" width="1280" height="720">
+                <defs>
+                    <mask id="dynamic-template-hole">
+                        <rect width="100%" height="100%" fill="white" />
+                        <circle cx="50vw" cy="45vh" r="35vh" fill="black" />
+                    </mask>
+                </defs>
+                <rect width="100%" height ="100%" fill="rgba(24, 0.25, 58, 0.8)" mask="url(#dynamic-template-hole)" />
+                <circle cx="50vw" cy="45vh" r="35vh" fill="none" stroke="white" stroke-width="2" />
+                <circle cx="50vw" cy="45vh" r="10vh" fill="none" stroke="white" stroke-width="1" />
+            </svg>
+            <div id="dynamic-counter"></div>
+            <div id="dynamic-target"></div>
+            <button id="dynamic-record" onclick="startRecord();">
+                <i class="fa fa-camera" aria-hidden="true"></i>
+            </button>
+        </section>
+    </body>
+</html>
