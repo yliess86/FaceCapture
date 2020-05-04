@@ -18,7 +18,7 @@ app.on('ready', () => {
         fullscreen: false,
         webPreferences: { nodeIntegration: true }
     });
-    // window.setMenu(null);
+    window.setMenu(null);
     window.loadURL(`file://${__dirname}/index.html`);
     window.on('closed', () => { window = null; });
 });

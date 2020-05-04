@@ -117,4 +117,4 @@ dist
 
 # Media
 *.webm
-.vscode/*
+.vscode/
