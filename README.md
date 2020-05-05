@@ -1,3 +1,7 @@
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/yliess86/FaceTool/blob/master/LICENSE)
+[![NodeJS 14.1](https://img.shields.io/badge/nodejs-14.1.0-green.svg)](https://nodejs.org/en/)
+[![Electron 8.2.5](https://img.shields.io/badge/electronjs-8.2.5-blue.svg)](https://www.electronjs.org/)
+
 # FaceCapture: a Simple Facial Registration Capture App
 
 ![Logo](logo.png)
